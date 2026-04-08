@@ -24,7 +24,7 @@ pipeline {
             steps {
                 bat '''
                 docker rm -f dev-container 2>nul || ver >nul
-                docker run -d -p 8081:80 --name dev-container exp8-app
+                docker run -d -p 8082:80 --name dev-container exp8-app
                 '''
             }
         }
